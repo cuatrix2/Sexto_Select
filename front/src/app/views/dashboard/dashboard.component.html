@@ -64,6 +64,43 @@
       </c-row>
     </c-card-body>
   </c-card>
+   </c-card-body>
+  <c-card class="mb-4">
+    <c-card-body>
+      <c-row>
+        <c-col sm="5">
+          <h4 class="card-title mb-0" id="traffic">Lista</h4>
+          <div class="small text-medium-emphasis">Lista de Proveedores</div>
+        </c-col>
+        <c-col class="d-none d-md-block" sm="7">
+          <table cTable>
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombres</th>
+                <th scope="col">Telefono</th>
+                <th scope="col">Correo</th>
+             
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let proveedor of proveedores; let i = index">
+                <td>{{ i + 1 }}</td>
+                <td>{{ proveedor.Nombres }}</td>
+                <td>{{ proveedor.Telefono }}</td>
+                <td>{{ proveedor.Correo }}</td>
+        
+              </tr>
+            </tbody>
+          </table>
+        </c-col>
+        
+      </c-row>
+    </c-card-body>
+  </c-card>
+
+
+  
   
   <!--  <c-row>
       <c-col sm="5">
